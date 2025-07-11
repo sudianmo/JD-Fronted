@@ -1,0 +1,171 @@
+/* 1. 重置样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. 公共样式 */
+.w {
+    width: 1190px;
+    margin: 0 auto;
+}
+.main .main-left,.main .main-left,
+.main .main-middle,
+.main .main-right {
+    border-radius: 10px; /* 添加圆角 */
+}
+.main .main-middle,
+.main .main-right {
+    border-radius: 10px; /* 添加圆角 */
+}
+/* 3. 顶部导航条 */
+.shortcut {
+    height: 30px;
+    line-height: 30px;
+    background-color: #e3e4e5;
+    border-bottom: 1px solid #ddd;
+}
+
+.shortcut .shortcut-left {
+    float: left;
+    color: #999;
+}
+
+.shortcut .shortcut-right {
+    float: right;
+    color: #999;
+}
+
+/* 4. header区域 */
+.header {
+    height: 140px;
+    background-color: #fff;
+    margin: 10px auto;
+}
+
+.header .logo {
+    float: left;
+    width: 190px;
+    height: 120px;
+    background-color: white;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 120px;
+    color: hsl(33, 91%, 83%);
+    border: 1px solid #000;
+}
+
+.header .search {
+    float: left;
+    width: 790px;
+    height: 35px;
+    background-color: hsl(33, 91%, 83%);
+    margin: 25px 0 0 90px;
+    line-height: 35px;
+    text-align: center;
+    border-radius:20px;
+}
+
+.header .cart {
+    float: right;
+    width: 190px;
+    height: 35px;
+    background-color: hsl(33, 91%, 83%);
+    margin-top: 25px;
+    line-height: 35px;
+    text-align: center;
+    border-radius:5px;
+}
+
+/* 5. 主导航 */
+.nav {
+    height: 45px;
+    background-color: hsl(33, 91%, 83%);
+    color: white;
+    line-height: 45px;
+    text-align: center;
+}
+
+/* 6. 主要内容区域 */
+.main {
+    margin-top: 10px;
+    height: 480px;
+}
+
+.main .main-left {
+    float: left;
+    width: 190px;
+    height: 480px;
+    background-color: hsl(33, 91%, 83%);
+    color: white;
+    text-align: center;
+    line-height: 480px;
+}
+
+.main .main-middle {
+    float: left;
+    width: 790px;
+    height: 480px;
+    background-color: hsl(33, 91%, 83%);
+    margin: 0 10px;
+    text-align: center;
+    line-height: 480px;
+}
+.main .main-left,
+.main .main-middle,
+.main .main-right {
+    border-radius: 10px; /* 添加圆角 */
+}
+.main .main-right {
+    float: right;
+    width: 190px;
+    height: 480px;
+    background-color:  hsl(33, 91%, 83%);
+    color: white;
+    text-align: center;
+    line-height: 480px;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.pindao {
+    height:100px;
+    margin-top: 20px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.pindao h5 {
+    font-size: 32px;
+    color:#333;
+    font-weight: bold;
+}
+.tuijian .item1,
+.tuijian .item2 {
+    float: left;
+}
+.tuijian .item3,
+.tuijian .item4 {
+    float: right;
+}
+.tuijian .item1,
+.tuijian .item2,
+.tuijian .item3, 
+.tuijian .item4 {
+    height:350.4px;
+    width:210px;
+    background-color:palevioletred;
+    border-radius: 10px;
+}
+
+.tuijian .w {
+    display: flex;
+    justify-content: space-between; /* 平均分布 */
+    flex-wrap: wrap; /* 允许换行 */
+}
+.logo .imag{
+    height:100%
+}
