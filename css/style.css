@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    background-color:#fff;
     box-sizing: border-box;
 }
 
@@ -9,6 +10,10 @@
 .w {
     width: 1190px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+  justify-content: space-between;
+
 }
 .main .main-left,.main .main-left,
 .main .main-middle,
@@ -23,7 +28,7 @@
 .shortcut {
     height: 30px;
     line-height: 30px;
-    background-color: #e3e4e5;
+    background-color: #f1f1f1;
     border-bottom: 1px solid #ddd;
 }
 
@@ -42,36 +47,61 @@
     height: 140px;
     background-color: #fff;
     margin: 10px auto;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
 }
-
+.header .logo img {
+        height: 100%;
+        object-fit: contain;
+}
 .header .logo {
     float: left;
-    width: 190px;
-    height: 120px;
+   height: 135px;
+    flex:3;
     background-color: white;
     margin-top: 10px;
     text-align: center;
-    line-height: 120px;
+    
     color: hsl(33, 91%, 83%);
-    border: 1px solid #000;
+    border-radius: 10px;
+   
 }
 
-.header .search {
-    float: left;
+.header .search input {
+  width:650px;
+    height: 30px;
+}
+.search {
     width: 790px;
     height: 35px;
-    background-color: hsl(33, 91%, 83%);
-    margin: 25px 0 0 90px;
+    /* background-color: #f7f7f7; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    margin-top:10px;
+
     line-height: 35px;
     text-align: center;
-    border-radius:20px;
+    border-radius:8px;
+    
 }
 
+.header .search .searchbin {
+    width: 80px;
+    height: 30px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
 .header .cart {
-    float: right;
-    width: 190px;
+    flex:3;
+    margin-left: 20px;
     height: 35px;
-    background-color: hsl(33, 91%, 83%);
+    background-color: #f7f7f7;
     margin-top: 25px;
     line-height: 35px;
     text-align: center;
@@ -81,12 +111,27 @@
 /* 5. 主导航 */
 .nav {
     height: 45px;
-    background-color: hsl(33, 91%, 83%);
-    color: white;
+    background-color: f5f5f5;
     line-height: 45px;
-    text-align: center;
+    margin-left:600px;
+    
+   
 }
+.nav .w {
+    display: flex;
+}
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap:40px;
+    justify-content: center;
+    align-items: center;
 
+}
+.nav .nav-list {
+    color: #333;
+    
+}
 /* 6. 主要内容区域 */
 .main {
     margin-top: 10px;
@@ -97,7 +142,7 @@
     float: left;
     width: 190px;
     height: 480px;
-    background-color: hsl(33, 91%, 83%);
+    background-color: #f5f5f5;
     color: white;
     text-align: center;
     line-height: 480px;
@@ -107,7 +152,7 @@
     float: left;
     width: 790px;
     height: 480px;
-    background-color: hsl(33, 91%, 83%);
+    background-color:#f5f5f5;
     margin: 0 10px;
     text-align: center;
     line-height: 480px;
@@ -121,7 +166,7 @@
     float: right;
     width: 190px;
     height: 480px;
-    background-color:  hsl(33, 91%, 83%);
+    background-color: #f5f5f5;
     color: white;
     text-align: center;
     line-height: 480px;
@@ -157,7 +202,7 @@
 .tuijian .item4 {
     height:350.4px;
     width:210px;
-    background-color:palevioletred;
+    background-color:#f7f7f7;
     border-radius: 10px;
 }
 
@@ -169,3 +214,44 @@
 .logo .imag{
     height:100%
 }
+.box  {
+   display: flex;
+
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    margin-top: 20px;
+}
+.colorbox {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 500px;
+    background-color:#f7f7f7; 
+    border-radius: 20px; /* 圆形 */
+}
+.feihua ul {
+    font-size: 30px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 40px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+.feihua ul li {
+
+        padding: 15px 20px;
+        border-radius: 10px;
+        background-color: #f7f7f7;
+        
+    
+}
+
+
